@@ -4,7 +4,8 @@
 ## Order of scripts to get finalized output.
 
 1. Place your paired fastq files in numbered folder (e.g. folder_1, folder_2, folder_3) for better parallization.
-3. Make sure to put your own account name in the batch script! 
+2.  Make sure to put your own account name in the batch script!
+3.  Submit .slurm scripts to scheduler and just run .sh scripts on head node.
 
 
 | Script Title | Use |
