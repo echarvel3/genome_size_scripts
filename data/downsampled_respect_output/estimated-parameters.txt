@@ -1,0 +1,5 @@
+sample	input_type	sequence_type	coverage	genome_length	uniqueness_ratio	HCRM	sequencing_error_rate	average_read_length
+unclass_Tetraodontidae_Takifugu_stictonotus_T8700S84_rep4.hist	histogram	genome-skim	3.72	403692532	0.73	283.73	0.0033	138.764
+unclass_Tetraodontidae_Takifugu_stictonotus_T8700S84_rep2.hist	histogram	genome-skim	3.71	404446120	0.73	285.54	0.0033	138.76
+unclass_Tetraodontidae_Takifugu_stictonotus_T8700S84_rep1.hist	histogram	genome-skim	3.72	404049914	0.73	283.90	0.0033	138.753
+unclass_Tetraodontidae_Takifugu_stictonotus_T8700S84_rep3.hist	histogram	genome-skim	3.71	404350561	0.73	285.34	0.0033	138.749
