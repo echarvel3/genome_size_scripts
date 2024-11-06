@@ -3,9 +3,9 @@
 
 ## Order of scripts to get finalized output.
 
-1_run_kraken.slurm  Decontamination
+| 1_run_kraken.slurm | Decontamination |
 
-2_run_jellyfish.slurm  Histogram Generation
+| 2_run_jellyfish.slurm | Histogram Generation |
 
 3_run_compile_hist_data.sh Compiling Necessary Data for RESPECT _(submit to slurm scheduler)_
 
