@@ -1,1 +1,1 @@
-scripts and data for genome size estimation.
+# scripts and data for genome size estimation.
