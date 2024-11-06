@@ -29,6 +29,8 @@ echo "========"
 
 mkdir --parents ${OUT_DIR}/folder_${SLURM_ARRAY_TASK_ID}
 
+# Decontaminates reads using Kraken2's PLUS-PFP 16GB library.
+
 for file in $(ls "${INPUT_DIR}/folder_${SLURM_ARRAY_TASK_ID}/"); do
             kraken2 \
                 --db ./plus-pfp/ \

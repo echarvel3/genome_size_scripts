@@ -36,6 +36,8 @@ mkdir --parents "${OUT_DIR}"
 
 echo "========"
 
+#Uses respect coverage estimates and read count estimates to downsample.
+
 for x in $(realpath ${FASTQ_DIR}/unclass*); do
 	filename=${x##*/}
 	line_count=$(grep "${filename}" "${JELLY_DIR}/read_counts.txt" | cut -f2)

@@ -33,6 +33,8 @@ mkdir --parents "${OUT_DIR}"
 
 echo "========"
 
+# Calculate average read length and jellyfish histograms for downsampled reads
+
 touch ${OUT_DIR}/read_lengths.txt
 
 for x in $(realpath ${INPUT_DIR}/unclass*.fastq); do

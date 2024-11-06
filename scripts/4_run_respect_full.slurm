@@ -31,6 +31,8 @@ mkdir --parents "${OUT_DIR}"
 
 echo "========"
 
+#Runs inital RESPECT run.
+
 respect -d ${INPUT_DIR} -I ${INPUT_DIR}/hist_info.txt -N 1000 -s 50 -o ${OUT_DIR} --threads ${NTHREADS}
 
 echo "========"

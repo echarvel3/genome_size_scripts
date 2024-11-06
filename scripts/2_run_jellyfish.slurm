@@ -33,6 +33,8 @@ mkdir --parents "${OUT_DIR}"
 
 echo "========"
 
+# Creates histogram files using jellyfish and also calculates average read length and numer of reads in a file.
+
 touch ${OUT_DIR}/read_lengths.txt
 touch ${OUT_DIR}/read_counts.txt
 

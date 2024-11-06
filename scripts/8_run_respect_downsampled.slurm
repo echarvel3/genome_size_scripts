@@ -29,6 +29,8 @@ date
 
 mkdir --parents "${OUT_DIR}"
 
+#runs final respect run for downsampled replicates.
+
 echo "========"
 
 respect -d ${INPUT_DIR} -I ${INPUT_DIR}/hist_info.txt -N 1000 -s 50 -o ${OUT_DIR} --threads ${NTHREADS}
