@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name="respect_full"
 #SBATCH --partition=shared
-#SBATCH --account=uot138
+#SBATCH --account=
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --cpus-per-task=20
