@@ -3,6 +3,8 @@
 
 ## Order of scripts to get finalized output.
 
+| Script Title | Use |
+|----|----|
 | 1_run_kraken.slurm | Decontamination |
 
 | 2_run_jellyfish.slurm | Histogram Generation |
