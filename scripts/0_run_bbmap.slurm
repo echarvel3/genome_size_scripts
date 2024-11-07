@@ -15,6 +15,9 @@ source ${HOME}/programs/miniconda3/etc/profile.d/conda.sh
 set -x
 
 echo "========"
+
+SCRIPT_DIR="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
+
 RANDOM_SEED=0
 NTHREADS=${NTHREADS:-15}
 INPUT="./folder_${SLURM_ARRAY_TASK_ID}/"
@@ -33,7 +36,7 @@ for file in $(realpath "${INPUT}/*${READ_1}"); do
         out_read=${file##*/}
 
         if [ ! -f "./bbmap_reads/folder_${SLURM_ARRAY_TASK_ID}/${out_read%${READ_1}}.fastq" ]; then
-            /expanse/lustre/scratch/echarvel3/temp_project/skmer2_realdata/skimming_scripts-echarvel/bbmap_pipeline_merge.sh "$read1" "$read2" "./bbmap_reads/folder_${SLURM_ARRAY_TASK_ID}/${out_read%${READ_1}}.fastq"
+            ${SCRIPT_DIR}/other_scripts/bbmap_pipeline.sh "$read1" "$read2" "./bbmap_reads/folder_${SLURM_ARRAY_TASK_ID}/${out_read%${READ_1}}.fastq"
         fi
 done
 
