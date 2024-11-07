@@ -10,6 +10,7 @@
 
 | Script Title | Use |
 |----|----|
+| 0_run_bbmap.slurm | bbduk.sh and dedupe.sh |
 | 1_run_kraken.slurm | Decontamination |
 | 2_run_jellyfish.slurm | Histogram Generation |
 | 3_run_compile_hist_data.sh | Compiling Necessary Data for RESPECT _(do not submit to slurm scheduler)_ |
