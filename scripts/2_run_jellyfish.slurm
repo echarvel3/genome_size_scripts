@@ -25,7 +25,7 @@ RANDOM_SEED=0
 NTHREADS=${NTHREADS:-1}
 
 INPUT_DIR="./kraken2_reads/folder_${SLURM_ARRAY_TASK_ID}"
-OUT_DIR="./decontam_jellyfish-test/folder_${SLURM_ARRAY_TASK_ID}"
+OUT_DIR="./decontam_jellyfish/folder_${SLURM_ARRAY_TASK_ID}"
 
 date
 
