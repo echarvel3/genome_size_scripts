@@ -20,3 +20,8 @@
 | 7_run_compile_downsampled_data.sh | Compiles Necessary Data Again _(do not submit to slurm scheduler)_ |
 |8_run_respect_downsampled.slurm | Runs Final RESPECT Run |
 
+---
+Notes:
+- You may have to change the SCRIPT_DIR variable from 0_run_bbmap.slurm to the path where the scripts have been placed.
+- Install kraken2 (export to PATH if installed via github)
+- Download PFP-Plus 16 and add to directory where analyses are being run.
