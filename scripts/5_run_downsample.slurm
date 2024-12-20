@@ -46,7 +46,7 @@ for x in $(realpath ${FASTQ_DIR}/unclass*); do
 	sample_num=$(printf %.0f $(echo "${line_count}/${coverage}*${target_cov}" | bc -l))
 
 	for y in {1..5}; do
-		${SCRIPT_DIR}/other_scripts/reformat.sh in="${x}" out="${OUT_DIR}/${filename%.fastq}_rep${y}.fastq" samplereadstarget="${sample_num}" sampleseed="${y}"
+		${SCRIPT_DIR}/other_scripts/reformat.sh in="${x}" out="${OUT_DIR}/${filename%.fastq}_rep${y}.fastq" samplereadstarget="${sample_num}" sampleseed="${y}" overwrite=true
 		#/usr/bin/time -v seqtk sample -s${y} -2 "${x}" "${sample_num}" > "${OUT_DIR}/${filename%.fastq}_rep${y}.fastq"
 	done
 done
