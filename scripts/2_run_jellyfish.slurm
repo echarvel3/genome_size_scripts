@@ -35,8 +35,22 @@ echo "========"
 
 # Creates histogram files using jellyfish and also calculates average read length and numer of reads in a file.
 
-touch ${OUT_DIR}/read_lengths.txt
-touch ${OUT_DIR}/read_counts.txt
+if [ -f ${OUT_DIR}/read_lengths.txt ]; then
+	rm ${OUT_DIR}/read_lengths.txt
+	touch ${OUT_DIR}/read_lengths.txt
+else
+	touch ${OUT_DIR}/read_lengths.txt
+fi
+
+
+if [ -f touch ${OUT_DIR}/read_counts.txt ]; then
+	rm ${OUT_DIR}/read_counts.txt
+	touch ${OUT_DIR}/read_counts.txt
+
+else
+	touch ${OUT_DIR}/read_counts.txt
+fi
+
 
 for x in $(realpath ${INPUT_DIR}/unclass*.fastq); do
 	
